@@ -1,5 +1,5 @@
-profile {
-  width: 300px;
+.statistics {
+  width: 350px;
   margin: 30px auto;
   background-color: #fff;
   border-radius: 10px;
@@ -8,50 +8,35 @@ profile {
   font-family: sans-serif;
 }
 
-.description {
+.title {
+  text-transform: uppercase;
+  color: #555;
   padding: 20px;
+  font-size: 20px;
 }
 
-.avatar {
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.name {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.tag,
-.location {
-  color: #888;
-  margin: 0;
-}
-
-.stats {
+.statList {
   display: flex;
-  background-color: #f3f6f9;
-  border-top: 1px solid #e4e9f0;
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.stats li {
+.item {
   flex: 1;
   padding: 15px 0;
+  color: #fff;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
 .label {
-  color: #888;
   font-size: 14px;
 }
 
-.quantity {
-  font-weight: 700;
+.percentage {
+  font-size: 18px;
+  font-weight: bold;
 }
