@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
-export default function Profile ({ username, tag, location, avatar, stats }) {
+export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -16,7 +16,7 @@ export default function Profile ({ username, tag, location, avatar, stats }) {
           <span className={css.quantity}>{stats.followers}</span>
         </li>
         <li>
-                  <span className={css.label}>Views</span>
+          <span className={css.label}>Views</span>
           <span className={css.quantity}>{stats.views}</span>
         </li>
         <li>
@@ -26,17 +26,17 @@ export default function Profile ({ username, tag, location, avatar, stats }) {
       </ul>
     </div>
   );
-};
+}
 
 // PropTypes
 Profile.propTypes = {
-    username: PropTypes.string.isRequired,
-            tag: PropTypes.string.isRequired,
-            location: PropTypes.string.isRequired,
-            avatar: PropTypes.string.isRequired,
-    stats: PropTypes.shape({
-        followers: PropTypes.number.isRequired,
-        view: PropTypes.number.isRequired,
-        likes: PropTypes.number.isRequired,
-            }).isRequired,
-}
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    view: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
+};
